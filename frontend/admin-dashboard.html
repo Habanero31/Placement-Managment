@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/dashboard.css">
+  <link rel="stylesheet" href="assets/css/tables.css">
+</head>
+<body>
+  <nav class="navbar">
+    <a class="brand" href="admin-dashboard.html">PlacementPro</a>
+    <div class="navlinks">
+      <a href="admin-dashboard.html">Analytics</a>
+      <a href="students.html">Students</a>
+      <a href="companies.html">Companies</a>
+      <a href="jobs.html">Jobs</a>
+      <a href="applications.html">Applications</a>
+      <a href="interviews.html">Interviews</a>
+      <button class="btn ghost" onclick="logout()">Logout</button>
+    </div>
+  </nav>
+  <main class="container">
+    <header class="page-header">
+      <div>
+        <p class="eyebrow">Admin Dashboard</p>
+        <h1>Placement overview</h1>
+      </div>
+      <a class="btn primary" href="jobs.html">Create Job</a>
+    </header>
+    <section id="statsGrid" class="stats-grid"></section>
+    <section class="analytics-grid">
+      <article class="panel chart-panel">
+        <h2>Students per Department</h2>
+        <div class="chart-body"><canvas id="departmentChart"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <h2>Placement Status</h2>
+        <div class="chart-body"><canvas id="statusChart"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <h2>Company-wise Hiring</h2>
+        <div class="chart-body"><canvas id="companyHiringChart"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <h2>Applications Over Time</h2>
+        <div class="chart-body"><canvas id="applicationsTimelineChart"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <h2>Package Distribution</h2>
+        <div class="chart-body"><canvas id="packageDistributionChart"></canvas></div>
+      </article>
+      <article class="panel chart-panel">
+        <h2>Interview Timeline</h2>
+        <div class="chart-body"><canvas id="interviewTimelineChart"></canvas></div>
+      </article>
+    </section>
+    <section class="dashboard-grid">
+      <article class="panel">
+        <h2>Recent Applications</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Student</th><th>Job</th><th>Company</th><th>Status</th><th>Applied</th></tr></thead>
+            <tbody id="recentApplications"></tbody>
+          </table>
+        </div>
+      </article>
+      <article class="panel">
+        <h2>Upcoming Interviews</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Student</th><th>Company</th><th>Date</th><th>Mode</th></tr></thead>
+            <tbody id="upcomingInterviews"></tbody>
+          </table>
+        </div>
+      </article>
+      <article class="panel wide-panel">
+        <h2>Top Offers</h2>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Student</th><th>Department</th><th>Company</th><th>Role</th><th>Package</th></tr></thead>
+            <tbody id="topOffers"></tbody>
+          </table>
+        </div>
+      </article>
+    </section>
+  </main>
+  <div id="loader" class="loader hidden"></div>
+  <div id="toast" class="toast"></div>
+  <script src="assets/js/ui.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+  <script src="assets/js/api.js"></script>
+  <script src="assets/js/auth.js"></script>
+  <script src="assets/js/dashboard.js"></script>
+</body>
+</html>

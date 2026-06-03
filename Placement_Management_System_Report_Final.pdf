@@ -1,0 +1,1778 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Roman >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Times-Bold >>
+endobj
+3 0 obj
+<< /Length 1617 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (ABSTRACT) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (The Placement Management System is a database-driven web application designed to) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (manage campus recruitment activities in a structured and efficient manner. The) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (system provides a centralized platform where placement administrators can) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (maintain student records, company records, job openings, applications, interview) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 663.00 Tm (schedules, and placement analytics.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 637.00 Tm (The project is implemented using HTML, CSS, and JavaScript for the frontend,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 619.00 Tm (Node.js and Express.js for the backend, and MySQL for relational storage.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 601.00 Tm (Authentication is secured using JWT and bcrypt. The schema demonstrates primary) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 583.00 Tm (keys, foreign keys, unique constraints, normalized tables, and SQL queries for) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 565.00 Tm (operational and analytical reporting.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 539.00 Tm (The report documents the system background, methodology, requirements, E-R model,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 521.00 Tm (relational database design, normalization, data dictionary, graphical interface,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 503.00 Tm (source code organization, testing results, conclusion, and future enhancements.) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 3 0 R >>
+endobj
+5 0 obj
+<< /Length 4454 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (TABLE OF CONTENTS) Tj ET
+0.6 w 56.00 710.80 485.00 24.20 re S
+BT /F2 10.2 Tf 1 0 0 1 71.97 719.00 Tm (SL.NO) Tj ET
+0.6 w 116 735 m 116 710.8 l S
+BT /F2 10.2 Tf 1 0 0 1 269.48 719.00 Tm (TITLE) Tj ET
+0.6 w 451 735 m 451 710.8 l S
+BT /F2 10.2 Tf 1 0 0 1 465.14 719.00 Tm (PAGE NUMBER) Tj ET
+0.6 w 56.00 686.60 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 694.80 Tm (1) Tj ET
+0.6 w 116 710.8 m 116 686.5999999999999 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 694.80 Tm (Introduction) Tj ET
+0.6 w 451 710.8 m 451 686.5999999999999 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 694.80 Tm (1) Tj ET
+0.6 w 56.00 662.40 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 670.60 Tm (2) Tj ET
+0.6 w 116 686.5999999999999 m 116 662.3999999999999 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 670.60 Tm (Background, Motivation and Scope) Tj ET
+0.6 w 451 686.5999999999999 m 451 662.3999999999999 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 670.60 Tm (2) Tj ET
+0.6 w 56.00 638.20 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 646.40 Tm (3) Tj ET
+0.6 w 116 662.3999999999999 m 116 638.1999999999998 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 646.40 Tm (Methodology) Tj ET
+0.6 w 451 662.3999999999999 m 451 638.1999999999998 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 646.40 Tm (3) Tj ET
+0.6 w 56.00 614.00 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 622.20 Tm (4) Tj ET
+0.6 w 116 638.1999999999998 m 116 613.9999999999998 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 622.20 Tm (Requirements) Tj ET
+0.6 w 451 638.1999999999998 m 451 613.9999999999998 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 622.20 Tm (5) Tj ET
+0.6 w 56.00 589.80 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 598.00 Tm (5) Tj ET
+0.6 w 116 613.9999999999998 m 116 589.7999999999997 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 598.00 Tm (E-R Diagram) Tj ET
+0.6 w 451 613.9999999999998 m 451 589.7999999999997 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 598.00 Tm (6) Tj ET
+0.6 w 56.00 565.60 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 573.80 Tm (6) Tj ET
+0.6 w 116 589.7999999999997 m 116 565.5999999999997 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 573.80 Tm (Relational Database Design) Tj ET
+0.6 w 451 589.7999999999997 m 451 565.5999999999997 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 573.80 Tm (8) Tj ET
+0.6 w 56.00 541.40 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 549.60 Tm (7) Tj ET
+0.6 w 116 565.5999999999997 m 116 541.3999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 549.60 Tm (Database Normalization) Tj ET
+0.6 w 451 565.5999999999997 m 451 541.3999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 549.60 Tm (13) Tj ET
+0.6 w 56.00 517.20 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 525.40 Tm (8) Tj ET
+0.6 w 116 541.3999999999996 m 116 517.1999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 525.40 Tm (Data Dictionary) Tj ET
+0.6 w 451 541.3999999999996 m 451 517.1999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 525.40 Tm (15) Tj ET
+0.6 w 56.00 493.00 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 83.45 501.20 Tm (9) Tj ET
+0.6 w 116 517.1999999999996 m 116 492.9999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 501.20 Tm (Graphical User Interface) Tj ET
+0.6 w 451 517.1999999999996 m 451 492.9999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 501.20 Tm (18) Tj ET
+0.6 w 56.00 468.80 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 80.90 477.00 Tm (10) Tj ET
+0.6 w 116 492.9999999999996 m 116 468.7999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 477.00 Tm (Source Code) Tj ET
+0.6 w 451 492.9999999999996 m 451 468.7999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 477.00 Tm (20) Tj ET
+0.6 w 56.00 444.60 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 80.90 452.80 Tm (11) Tj ET
+0.6 w 116 468.7999999999996 m 116 444.5999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 452.80 Tm (Test and Results) Tj ET
+0.6 w 451 468.7999999999996 m 451 444.5999999999996 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 452.80 Tm (23) Tj ET
+0.6 w 56.00 420.40 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 80.90 428.60 Tm (12) Tj ET
+0.6 w 116 444.5999999999996 m 116 420.39999999999964 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 428.60 Tm (Conclusion) Tj ET
+0.6 w 451 444.5999999999996 m 451 420.39999999999964 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 428.60 Tm (27) Tj ET
+0.6 w 56.00 396.20 485.00 24.20 re S
+BT /F1 10.2 Tf 1 0 0 1 80.90 404.40 Tm (13) Tj ET
+0.6 w 116 420.39999999999964 m 116 396.19999999999965 l S
+BT /F1 10.2 Tf 1 0 0 1 121.00 404.40 Tm (Future Enhancement and Bibliography) Tj ET
+0.6 w 451 420.39999999999964 m 451 396.19999999999965 l S
+BT /F1 10.2 Tf 1 0 0 1 456.00 404.40 Tm (28) Tj ET
+endstream
+endobj
+6 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 5 0 R >>
+endobj
+7 0 obj
+<< /Length 2794 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 1) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (1. INTRODUCTION) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (A placement cell manages a large amount of academic, recruitment, and interview) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (data. Manual processing through spreadsheets or paper-based records can create) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (duplicate entries, delayed updates, missing information, and difficulty in) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (preparing analytical reports.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 655.00 Tm (The Placement Management System addresses these issues by storing all) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 637.00 Tm (placement-related information in a normalized MySQL database and presenting it) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 619.00 Tm (through a browser-based interface. Administrators can manage students, companies,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 601.00 Tm (jobs, applications, interviews, and analytics, while students can view) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 583.00 Tm (opportunities and track their activity.) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 557.00 Tm (Technologies Used) Tj ET
+0.6 w 56.00 519.00 485.00 24.00 re S
+BT /F2 9.8 Tf 1 0 0 1 106.55 527.00 Tm (Technology) Tj ET
+0.6 w 211 543 m 211 519 l S
+BT /F2 9.8 Tf 1 0 0 1 357.13 527.00 Tm (Purpose) Tj ET
+0.6 w 56.00 481.40 485.00 37.60 re S
+BT /F1 9.8 Tf 1 0 0 1 82.05 503.00 Tm (HTML, CSS, JavaScript) Tj ET
+0.6 w 211 519 m 211 481.4 l S
+BT /F1 9.8 Tf 1 0 0 1 216.00 503.00 Tm (Frontend structure, styling, interaction, forms, tables, and) Tj ET
+BT /F1 9.8 Tf 1 0 0 1 216.00 489.20 Tm (dashboard rendering) Tj ET
+0.6 w 56.00 443.80 485.00 37.60 re S
+BT /F1 9.8 Tf 1 0 0 1 79.60 465.40 Tm (Node.js and Express.js) Tj ET
+0.6 w 211 481.4 m 211 443.79999999999995 l S
+BT /F1 9.8 Tf 1 0 0 1 216.00 465.40 Tm (Backend runtime, REST API routing, middleware, static file) Tj ET
+BT /F1 9.8 Tf 1 0 0 1 216.00 451.60 Tm (serving, and controllers) Tj ET
+0.6 w 56.00 419.80 485.00 24.00 re S
+BT /F1 9.8 Tf 1 0 0 1 121.25 427.80 Tm (MySQL) Tj ET
+0.6 w 211 443.79999999999995 m 211 419.79999999999995 l S
+BT /F1 9.8 Tf 1 0 0 1 216.00 427.80 Tm (Relational data storage with keys, constraints, and joins) Tj ET
+0.6 w 56.00 395.80 485.00 24.00 re S
+BT /F1 9.8 Tf 1 0 0 1 99.20 403.80 Tm (JWT and bcrypt) Tj ET
+0.6 w 211 419.79999999999995 m 211 395.79999999999995 l S
+BT /F1 9.8 Tf 1 0 0 1 216.00 403.80 Tm (Authentication, token-based sessions, and password hashing) Tj ET
+0.6 w 56.00 371.80 485.00 24.00 re S
+BT /F1 9.8 Tf 1 0 0 1 113.90 379.80 Tm (Chart.js) Tj ET
+0.6 w 211 395.79999999999995 m 211 371.79999999999995 l S
+BT /F1 9.8 Tf 1 0 0 1 216.00 379.80 Tm (Dashboard analytics and visual reporting) Tj ET
+endstream
+endobj
+8 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 7 0 R >>
+endobj
+9 0 obj
+<< /Length 1820 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 2) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (2. BACKGROUND, MOTIVATION AND SCOPE) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (Campus placement activities involve students, recruiters, job roles, eligibility) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (rules, applications, interview rounds, and placement outcomes. A DBMS-based) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (application is suitable because the data is structured, relational, and) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (frequently queried.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 655.00 Tm (The motivation for this project is to reduce manual effort, improve data) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 637.00 Tm (accuracy, provide secure access, and generate placement statistics quickly. A) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 619.00 Tm (centralized system allows administrators to monitor recruitment progress and) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 601.00 Tm (enables students to access relevant placement information.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 575.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 575.00 Tm (The scope includes student, company, job, application, interview,) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 557.00 Tm (authentication, and dashboard modules.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 534.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 534.00 Tm (The system can be used by a college placement department for academic) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 516.00 Tm (demonstration and practical record management.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 493.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 493.00 Tm (Future extensions may include company login, resume upload, email) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 475.00 Tm (notifications, offer letters, and predictive analytics.) Tj ET
+endstream
+endobj
+10 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 9 0 R >>
+endobj
+11 0 obj
+<< /Length 1698 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 3) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (3. METHODOLOGY) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (The project follows a modular full-stack development methodology. The placement) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (workflow was divided into database entities and application modules. The schema) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (was created first, followed by backend APIs, authentication middleware, frontend) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (pages, and dashboard analytics.) Tj ET
+0.6 w 56.00 580.00 135.00 65.00 re S
+BT /F2 12 Tf 1 0 0 1 100.40 625.00 Tm (Browser) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 62.00 605.00 Tm (HTML, CSS, JavaScript,) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 62.00 592.00 Tm (forms, dashboards, and) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 62.00 579.00 Tm (charts) Tj ET
+0.9 w 199 611 m 213 611 l S
+BT /F2 11 Tf 1 0 0 1 212.00 607.00 Tm (>) Tj ET
+0.6 w 221.00 580.00 135.00 65.00 re S
+BT /F2 12 Tf 1 0 0 1 265.40 625.00 Tm (Backend) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 227.00 605.00 Tm (Node.js, Express routes,) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 227.00 592.00 Tm (controllers, middleware,) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 227.00 579.00 Tm (validation) Tj ET
+0.9 w 364 611 m 378 611 l S
+BT /F2 11 Tf 1 0 0 1 377.00 607.00 Tm (>) Tj ET
+0.6 w 386.00 580.00 135.00 65.00 re S
+BT /F2 12 Tf 1 0 0 1 427.10 625.00 Tm (Database) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 392.00 605.00 Tm (MySQL tables, keys,) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 392.00 592.00 Tm (constraints, joins, and) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 392.00 579.00 Tm (seed records) Tj ET
+BT /F2 12 Tf 1 0 0 1 195.34 555.00 Tm (Figure 4.1: System Architecture) Tj ET
+endstream
+endobj
+12 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 11 0 R >>
+endobj
+13 0 obj
+<< /Length 1799 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 4) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (3. METHODOLOGY) Tj ET
+BT /F1 13 Tf 1 0 0 1 56.00 735.00 Tm (Development Steps) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 709.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 709.00 Tm (Identified user roles, placement workflows, and core entities.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 686.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 686.00 Tm (Designed normalized tables for users, students, companies, jobs, applications,) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 668.00 Tm (and interviews.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 645.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 645.00 Tm (Created database.sql with primary keys, foreign keys, unique constraints, and) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 627.00 Tm (seed data.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 604.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 604.00 Tm (Implemented backend route modules and controller functions using Express.js.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 581.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 581.00 Tm (Added JWT authentication, bcrypt password verification, validation, and) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 563.00 Tm (role-based access control.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 540.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 540.00 Tm (Built frontend pages for login, dashboards, and management modules.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 517.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 517.00 Tm (Connected frontend forms and tables to REST APIs using JavaScript fetch calls.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 494.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 494.00 Tm (Tested login, CRUD operations, application submission, interview scheduling,) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 476.00 Tm (and dashboard analytics.) Tj ET
+endstream
+endobj
+14 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 13 0 R >>
+endobj
+15 0 obj
+<< /Length 5222 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 5) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (4. REQUIREMENTS) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 5.1: Hardware Requirements) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 9.4 Tf 1 0 0 1 97.73 705.00 Tm (Component) Tj ET
+0.6 w 186 721 m 186 697 l S
+BT /F2 9.4 Tf 1 0 0 1 224.38 705.00 Tm (Minimum Requirement) Tj ET
+0.6 w 361 721 m 361 697 l S
+BT /F2 9.4 Tf 1 0 0 1 391.54 705.00 Tm (Recommended Requirement) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 99.85 681.00 Tm (Processor) Tj ET
+0.6 w 186 697 m 186 673 l S
+BT /F1 9.4 Tf 1 0 0 1 191.00 681.00 Tm (Intel Core i3 or equivalent) Tj ET
+0.6 w 361 697 m 361 673 l S
+BT /F1 9.4 Tf 1 0 0 1 366.00 681.00 Tm (Intel Core i5 or better) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 113.95 657.00 Tm (RAM) Tj ET
+0.6 w 186 673 m 186 649 l S
+BT /F1 9.4 Tf 1 0 0 1 191.00 657.00 Tm (4 GB) Tj ET
+0.6 w 361 673 m 361 649 l S
+BT /F1 9.4 Tf 1 0 0 1 366.00 657.00 Tm (8 GB or more) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 104.55 633.00 Tm (Storage) Tj ET
+0.6 w 186 649 m 186 625 l S
+BT /F1 9.4 Tf 1 0 0 1 191.00 633.00 Tm (2 GB free space) Tj ET
+0.6 w 361 649 m 361 625 l S
+BT /F1 9.4 Tf 1 0 0 1 366.00 633.00 Tm (5 GB free space) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 104.55 609.00 Tm (Display) Tj ET
+0.6 w 186 625 m 186 601 l S
+BT /F1 9.4 Tf 1 0 0 1 191.00 609.00 Tm (HD display) Tj ET
+0.6 w 361 625 m 361 601 l S
+BT /F1 9.4 Tf 1 0 0 1 366.00 609.00 Tm (Full HD display) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 104.55 585.00 Tm (Network) Tj ET
+0.6 w 186 601 m 186 577 l S
+BT /F1 9.4 Tf 1 0 0 1 191.00 585.00 Tm (Basic internet access) Tj ET
+0.6 w 361 601 m 361 577 l S
+BT /F1 9.4 Tf 1 0 0 1 366.00 585.00 Tm (Stable internet connection) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 565.00 Tm (Table 5.2: Software Requirements) Tj ET
+0.6 w 56.00 527.00 485.00 24.00 re S
+BT /F2 9.4 Tf 1 0 0 1 115.32 535.00 Tm (Software) Tj ET
+0.6 w 216 551 m 216 527 l S
+BT /F2 9.4 Tf 1 0 0 1 360.40 535.00 Tm (Purpose) Tj ET
+0.6 w 56.00 503.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 119.55 511.00 Tm (Node.js) Tj ET
+0.6 w 216 527 m 216 503 l S
+BT /F1 9.4 Tf 1 0 0 1 221.00 511.00 Tm (Runs the backend server) Tj ET
+0.6 w 56.00 479.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 107.80 487.00 Tm (MySQL Server) Tj ET
+0.6 w 216 503 m 216 479 l S
+BT /F1 9.4 Tf 1 0 0 1 221.00 487.00 Tm (Stores relational project data) Tj ET
+0.6 w 56.00 455.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 110.15 463.00 Tm (Web Browser) Tj ET
+0.6 w 216 479 m 216 455 l S
+BT /F1 9.4 Tf 1 0 0 1 221.00 463.00 Tm (Runs the frontend interface) Tj ET
+0.6 w 56.00 431.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 110.15 439.00 Tm (Code Editor) Tj ET
+0.6 w 216 455 m 216 431 l S
+BT /F1 9.4 Tf 1 0 0 1 221.00 439.00 Tm (Development and maintenance) Tj ET
+0.6 w 56.00 407.00 485.00 24.00 re S
+BT /F1 9.4 Tf 1 0 0 1 128.95 415.00 Tm (npm) Tj ET
+0.6 w 216 431 m 216 407 l S
+BT /F1 9.4 Tf 1 0 0 1 221.00 415.00 Tm (Dependency management) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 395.00 Tm (Required Packages) Tj ET
+0.6 w 56.00 357.00 485.00 24.00 re S
+BT /F2 8.8 Tf 1 0 0 1 116.56 365.00 Tm (Package) Tj ET
+0.6 w 211 381 m 211 357 l S
+BT /F2 8.8 Tf 1 0 0 1 368.74 365.00 Tm (Use) Tj ET
+0.6 w 56.00 333.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 118.10 341.00 Tm (express) Tj ET
+0.6 w 211 357 m 211 333 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 341.00 Tm (REST API routing and middleware) Tj ET
+0.6 w 56.00 309.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 120.30 317.00 Tm (mysql2) Tj ET
+0.6 w 211 333 m 211 309 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 317.00 Tm (MySQL connection pool and queries) Tj ET
+0.6 w 56.00 285.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 120.30 293.00 Tm (bcrypt) Tj ET
+0.6 w 211 309 m 211 285 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 293.00 Tm (Password hashing) Tj ET
+0.6 w 56.00 261.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 107.10 269.00 Tm (jsonwebtoken) Tj ET
+0.6 w 211 285 m 211 261 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 269.00 Tm (JWT authentication) Tj ET
+0.6 w 56.00 237.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 124.70 245.00 Tm (cors) Tj ET
+0.6 w 211 261 m 211 237 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 245.00 Tm (Cross-origin API support) Tj ET
+0.6 w 56.00 213.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 120.30 221.00 Tm (dotenv) Tj ET
+0.6 w 211 237 m 211 213 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 221.00 Tm (Environment configuration) Tj ET
+0.6 w 56.00 189.00 485.00 24.00 re S
+BT /F1 8.8 Tf 1 0 0 1 96.10 197.00 Tm (express-validator) Tj ET
+0.6 w 211 213 m 211 189 l S
+BT /F1 8.8 Tf 1 0 0 1 216.00 197.00 Tm (Request validation) Tj ET
+BT /F2 11 Tf 1 0 0 1 56.00 177.00 Tm (Environment File Example) Tj ET
+0.6 w 56.00 107.00 487.28 58.00 re S
+BT /F1 8.5 Tf 1 0 0 1 68.00 159.00 Tm (PORT=5000) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 68.00 151.00 Tm (DB_HOST=localhost) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 68.00 143.00 Tm (DB_USER=root) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 68.00 135.00 Tm (DB_PASSWORD=your_password) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 68.00 127.00 Tm (DB_NAME=placement_management) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 68.00 119.00 Tm (JWT_SECRET=change_this_secret) Tj ET
+endstream
+endobj
+16 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 15 0 R >>
+endobj
+17 0 obj
+<< /Length 2333 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 6) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (5. E-R DIAGRAM) Tj ET
+0.6 w 56.00 623.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 113.88 687.00 Tm (USERS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 667.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 654.00 Tm (name, email UNIQUE) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 641.00 Tm (password, role) Tj ET
+0.6 w 224.00 623.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 272.80 687.00 Tm (STUDENTS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 667.00 Tm (PK id, FK user_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 654.00 Tm (roll_no UNIQUE) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 641.00 Tm (department, cgpa) Tj ET
+0.6 w 392.00 623.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 437.77 687.00 Tm (COMPANIES) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 667.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 654.00 Tm (name UNIQUE) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 641.00 Tm (industry, location) Tj ET
+0.6 w 56.00 511.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 116.90 575.00 Tm (JOBS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 555.00 Tm (PK id, FK company_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 542.00 Tm (title, package_lpa) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 529.00 Tm (min_cgpa, status) Tj ET
+0.6 w 224.00 511.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 260.70 575.00 Tm (APPLICATIONS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 555.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 542.00 Tm (FK student_id, job_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 529.00 Tm (status, applied_at) Tj ET
+0.6 w 392.00 511.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 434.75 575.00 Tm (INTERVIEWS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 555.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 542.00 Tm (FK application_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 529.00 Tm (date, mode, result) Tj ET
+0.6 w 91.00 455.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 250.39 440.00 Tm (USERS 1:1 STUDENTS) Tj ET
+0.6 w 91.00 425.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 250.39 410.00 Tm (COMPANIES 1:M JOBS) Tj ET
+0.6 w 91.00 395.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 197.89 380.00 Tm (STUDENTS M:N JOBS through APPLICATIONS) Tj ET
+0.6 w 91.00 365.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 226.76 350.00 Tm (APPLICATIONS 1:M INTERVIEWS) Tj ET
+BT /F2 12 Tf 1 0 0 1 221.74 315.00 Tm (Figure 6.1: E-R Diagram) Tj ET
+endstream
+endobj
+18 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 17 0 R >>
+endobj
+19 0 obj
+<< /Length 1553 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 7) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (5. E-R DIAGRAM) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (The E-R model represents the major entities and relationships in the Placement) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (Management System. The users table stores login credentials and roles. The) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (students table stores academic details and is linked to users. Companies post) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (jobs, students apply for jobs, and interviews are scheduled for applications.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 655.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 655.00 Tm (users to students is a one-to-one relationship because each student account) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 637.00 Tm (has one profile.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 614.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 614.00 Tm (companies to jobs is a one-to-many relationship because one company can post) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 596.00 Tm (multiple jobs.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 573.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 573.00 Tm (students to jobs is many-to-many and is resolved through the applications) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 555.00 Tm (table.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 532.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 532.00 Tm (applications to interviews is one-to-many because an application may have) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 514.00 Tm (multiple interview rounds.) Tj ET
+endstream
+endobj
+20 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 19 0 R >>
+endobj
+21 0 obj
+<< /Length 2785 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 8) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (6. RELATIONAL DATABASE DESIGN) Tj ET
+0.6 w 56.00 613.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 113.88 677.00 Tm (USERS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 657.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 644.00 Tm (name, email UNIQUE) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 631.00 Tm (password, role) Tj ET
+0.6 w 224.00 613.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 272.80 677.00 Tm (STUDENTS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 657.00 Tm (PK id, FK user_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 644.00 Tm (roll_no UNIQUE) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 631.00 Tm (department, cgpa) Tj ET
+0.6 w 392.00 613.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 437.77 677.00 Tm (COMPANIES) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 657.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 644.00 Tm (name UNIQUE) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 631.00 Tm (industry, location) Tj ET
+0.6 w 56.00 501.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 116.90 565.00 Tm (JOBS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 545.00 Tm (PK id, FK company_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 532.00 Tm (title, package_lpa) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 64.00 519.00 Tm (min_cgpa, status) Tj ET
+0.6 w 224.00 501.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 260.70 565.00 Tm (APPLICATIONS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 545.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 532.00 Tm (FK student_id, job_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 232.00 519.00 Tm (status, applied_at) Tj ET
+0.6 w 392.00 501.00 146.00 82.00 re S
+BT /F2 11 Tf 1 0 0 1 434.75 565.00 Tm (INTERVIEWS) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 545.00 Tm (PK id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 532.00 Tm (FK application_id) Tj ET
+BT /F1 9.5 Tf 1 0 0 1 400.00 519.00 Tm (date, mode, result) Tj ET
+0.6 w 91.00 445.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 250.39 430.00 Tm (USERS 1:1 STUDENTS) Tj ET
+0.6 w 91.00 415.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 250.39 400.00 Tm (COMPANIES 1:M JOBS) Tj ET
+0.6 w 91.00 385.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 197.89 370.00 Tm (STUDENTS M:N JOBS through APPLICATIONS) Tj ET
+0.6 w 91.00 355.00 417.28 22.00 re S
+BT /F1 10.5 Tf 1 0 0 1 226.76 340.00 Tm (APPLICATIONS 1:M INTERVIEWS) Tj ET
+BT /F2 12 Tf 1 0 0 1 175.54 305.00 Tm (Figure 7.1: Relational Schema Diagram) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 280.00 Tm (Relationship Summary: students.user_id references users.id; jobs.company_id) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 262.00 Tm (references companies.id; applications.student_id references students.id;) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 244.00 Tm (applications.job_id references jobs.id; interviews.application_id references) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 226.00 Tm (applications.id.) Tj ET
+endstream
+endobj
+22 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 21 0 R >>
+endobj
+23 0 obj
+<< /Length 5892 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 282.64 22.00 Tm (Page 9) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (6. RELATIONAL DATABASE DESIGN) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 7.1: Users Table) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 8.6 Tf 1 0 0 1 87.81 705.00 Tm (Column) Tj ET
+0.6 w 148 721 m 148 697 l S
+BT /F2 8.6 Tf 1 0 0 1 190.72 705.00 Tm (Data Type) Tj ET
+0.6 w 276 721 m 276 697 l S
+BT /F2 8.6 Tf 1 0 0 1 303.16 705.00 Tm (Key / Constraint) Tj ET
+0.6 w 406 721 m 406 697 l S
+BT /F2 8.6 Tf 1 0 0 1 456.94 705.00 Tm (Purpose) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 97.70 681.00 Tm (id) Tj ET
+0.6 w 148 697 m 148 673 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 681.00 Tm (INT) Tj ET
+0.6 w 276 697 m 276 673 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 681.00 Tm (PK) Tj ET
+0.6 w 406 697 m 406 673 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 681.00 Tm (User identifier) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 93.40 657.00 Tm (name) Tj ET
+0.6 w 148 673 m 148 649 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 657.00 Tm (VARCHAR\(100\)) Tj ET
+0.6 w 276 673 m 276 649 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 657.00 Tm (NOT NULL) Tj ET
+0.6 w 406 673 m 406 649 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 657.00 Tm (Full name) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 91.25 633.00 Tm (email) Tj ET
+0.6 w 148 649 m 148 625 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 633.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 649 m 276 625 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 633.00 Tm (UNIQUE) Tj ET
+0.6 w 406 649 m 406 625 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 633.00 Tm (Login email) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 84.80 609.00 Tm (password) Tj ET
+0.6 w 148 625 m 148 601 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 609.00 Tm (VARCHAR\(255\)) Tj ET
+0.6 w 276 625 m 276 601 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 609.00 Tm (NOT NULL) Tj ET
+0.6 w 406 625 m 406 601 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 609.00 Tm (Hashed password) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 93.40 585.00 Tm (role) Tj ET
+0.6 w 148 601 m 148 577 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 585.00 Tm (ENUM\('admin','student'\)) Tj ET
+0.6 w 276 601 m 276 577 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 585.00 Tm (NOT NULL) Tj ET
+0.6 w 406 601 m 406 577 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 585.00 Tm (Access role) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 80.50 561.00 Tm (created_at) Tj ET
+0.6 w 148 577 m 148 553 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 561.00 Tm (TIMESTAMP) Tj ET
+0.6 w 276 577 m 276 553 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 561.00 Tm (DEFAULT CURRENT_TIMESTAMP) Tj ET
+0.6 w 406 577 m 406 553 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 561.00 Tm (Creation time) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 541.00 Tm (Table 7.2: Students Table) Tj ET
+0.6 w 56.00 503.00 485.00 24.00 re S
+BT /F2 8.6 Tf 1 0 0 1 87.81 511.00 Tm (Column) Tj ET
+0.6 w 148 527 m 148 503 l S
+BT /F2 8.6 Tf 1 0 0 1 190.72 511.00 Tm (Data Type) Tj ET
+0.6 w 276 527 m 276 503 l S
+BT /F2 8.6 Tf 1 0 0 1 303.16 511.00 Tm (Key / Constraint) Tj ET
+0.6 w 406 527 m 406 503 l S
+BT /F2 8.6 Tf 1 0 0 1 456.94 511.00 Tm (Purpose) Tj ET
+0.6 w 56.00 479.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 97.70 487.00 Tm (id) Tj ET
+0.6 w 148 503 m 148 479 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 487.00 Tm (INT) Tj ET
+0.6 w 276 503 m 276 479 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 487.00 Tm (PK) Tj ET
+0.6 w 406 503 m 406 479 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 487.00 Tm (Student identifier) Tj ET
+0.6 w 56.00 455.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 86.95 463.00 Tm (user_id) Tj ET
+0.6 w 148 479 m 148 455 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 463.00 Tm (INT) Tj ET
+0.6 w 276 479 m 276 455 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 463.00 Tm (FK, UNIQUE) Tj ET
+0.6 w 406 479 m 406 455 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 463.00 Tm (Linked user account) Tj ET
+0.6 w 56.00 431.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 86.95 439.00 Tm (roll_no) Tj ET
+0.6 w 148 455 m 148 431 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 439.00 Tm (VARCHAR\(40\)) Tj ET
+0.6 w 276 455 m 276 431 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 439.00 Tm (UNIQUE) Tj ET
+0.6 w 406 455 m 406 431 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 439.00 Tm (Roll number) Tj ET
+0.6 w 56.00 407.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 80.50 415.00 Tm (department) Tj ET
+0.6 w 148 431 m 148 407 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 415.00 Tm (VARCHAR\(80\)) Tj ET
+0.6 w 276 431 m 276 407 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 415.00 Tm (NOT NULL) Tj ET
+0.6 w 406 431 m 406 407 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 415.00 Tm (Department) Tj ET
+0.6 w 56.00 383.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 69.75 391.00 Tm (graduation_year) Tj ET
+0.6 w 148 407 m 148 383 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 391.00 Tm (YEAR) Tj ET
+0.6 w 276 407 m 276 383 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 391.00 Tm (NOT NULL) Tj ET
+0.6 w 406 407 m 406 383 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 391.00 Tm (Graduation year) Tj ET
+0.6 w 56.00 359.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 93.40 367.00 Tm (cgpa) Tj ET
+0.6 w 148 383 m 148 359 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 367.00 Tm (DECIMAL\(3,2\)) Tj ET
+0.6 w 276 383 m 276 359 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 367.00 Tm (CHECK) Tj ET
+0.6 w 406 383 m 406 359 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 367.00 Tm (Academic score) Tj ET
+0.6 w 56.00 335.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 89.10 343.00 Tm (skills) Tj ET
+0.6 w 148 359 m 148 335 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 343.00 Tm (TEXT) Tj ET
+0.6 w 276 359 m 276 335 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 343.00 Tm () Tj ET
+0.6 w 406 359 m 406 335 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 343.00 Tm (Technical skills) Tj ET
+0.6 w 56.00 311.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 91.25 319.00 Tm (phone) Tj ET
+0.6 w 148 335 m 148 311 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 319.00 Tm (VARCHAR\(20\)) Tj ET
+0.6 w 276 335 m 276 311 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 319.00 Tm () Tj ET
+0.6 w 406 335 m 406 311 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 319.00 Tm (Contact number) Tj ET
+endstream
+endobj
+24 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 23 0 R >>
+endobj
+25 0 obj
+<< /Length 5818 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 10) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (6. RELATIONAL DATABASE DESIGN) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 7.3: Companies Table) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 8.6 Tf 1 0 0 1 87.81 705.00 Tm (Column) Tj ET
+0.6 w 148 721 m 148 697 l S
+BT /F2 8.6 Tf 1 0 0 1 190.72 705.00 Tm (Data Type) Tj ET
+0.6 w 276 721 m 276 697 l S
+BT /F2 8.6 Tf 1 0 0 1 303.16 705.00 Tm (Key / Constraint) Tj ET
+0.6 w 406 721 m 406 697 l S
+BT /F2 8.6 Tf 1 0 0 1 456.94 705.00 Tm (Purpose) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 97.70 681.00 Tm (id) Tj ET
+0.6 w 148 697 m 148 673 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 681.00 Tm (INT) Tj ET
+0.6 w 276 697 m 276 673 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 681.00 Tm (PK) Tj ET
+0.6 w 406 697 m 406 673 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 681.00 Tm (Company identifier) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 93.40 657.00 Tm (name) Tj ET
+0.6 w 148 673 m 148 649 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 657.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 673 m 276 649 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 657.00 Tm (UNIQUE) Tj ET
+0.6 w 406 673 m 406 649 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 657.00 Tm (Company name) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 84.80 633.00 Tm (industry) Tj ET
+0.6 w 148 649 m 148 625 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 633.00 Tm (VARCHAR\(100\)) Tj ET
+0.6 w 276 649 m 276 625 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 633.00 Tm () Tj ET
+0.6 w 406 649 m 406 625 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 633.00 Tm (Business domain) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 86.95 609.00 Tm (website) Tj ET
+0.6 w 148 625 m 148 601 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 609.00 Tm (VARCHAR\(180\)) Tj ET
+0.6 w 276 625 m 276 601 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 609.00 Tm () Tj ET
+0.6 w 406 625 m 406 601 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 609.00 Tm (Website) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 84.80 585.00 Tm (location) Tj ET
+0.6 w 148 601 m 148 577 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 585.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 601 m 276 577 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 585.00 Tm () Tj ET
+0.6 w 406 601 m 406 577 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 585.00 Tm (Location) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 74.05 561.00 Tm (contact_email) Tj ET
+0.6 w 148 577 m 148 553 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 561.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 577 m 276 553 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 561.00 Tm () Tj ET
+0.6 w 406 577 m 406 553 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 561.00 Tm (HR email) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 541.00 Tm (Table 7.4: Jobs Table) Tj ET
+0.6 w 56.00 503.00 485.00 24.00 re S
+BT /F2 8.6 Tf 1 0 0 1 87.81 511.00 Tm (Column) Tj ET
+0.6 w 148 527 m 148 503 l S
+BT /F2 8.6 Tf 1 0 0 1 190.72 511.00 Tm (Data Type) Tj ET
+0.6 w 276 527 m 276 503 l S
+BT /F2 8.6 Tf 1 0 0 1 303.16 511.00 Tm (Key / Constraint) Tj ET
+0.6 w 406 527 m 406 503 l S
+BT /F2 8.6 Tf 1 0 0 1 456.94 511.00 Tm (Purpose) Tj ET
+0.6 w 56.00 479.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 97.70 487.00 Tm (id) Tj ET
+0.6 w 148 503 m 148 479 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 487.00 Tm (INT) Tj ET
+0.6 w 276 503 m 276 479 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 487.00 Tm (PK) Tj ET
+0.6 w 406 503 m 406 479 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 487.00 Tm (Job identifier) Tj ET
+0.6 w 56.00 455.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 80.50 463.00 Tm (company_id) Tj ET
+0.6 w 148 479 m 148 455 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 463.00 Tm (INT) Tj ET
+0.6 w 276 479 m 276 455 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 463.00 Tm (FK) Tj ET
+0.6 w 406 479 m 406 455 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 463.00 Tm (Posting company) Tj ET
+0.6 w 56.00 431.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 91.25 439.00 Tm (title) Tj ET
+0.6 w 148 455 m 148 431 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 439.00 Tm (VARCHAR\(140\)) Tj ET
+0.6 w 276 455 m 276 431 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 439.00 Tm (NOT NULL) Tj ET
+0.6 w 406 455 m 406 431 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 439.00 Tm (Job role) Tj ET
+0.6 w 56.00 407.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 78.35 415.00 Tm (description) Tj ET
+0.6 w 148 431 m 148 407 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 415.00 Tm (TEXT) Tj ET
+0.6 w 276 431 m 276 407 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 415.00 Tm () Tj ET
+0.6 w 406 431 m 406 407 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 415.00 Tm (Responsibilities) Tj ET
+0.6 w 56.00 383.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 78.35 391.00 Tm (package_lpa) Tj ET
+0.6 w 148 407 m 148 383 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 391.00 Tm (DECIMAL\(5,2\)) Tj ET
+0.6 w 276 407 m 276 383 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 391.00 Tm () Tj ET
+0.6 w 406 407 m 406 383 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 391.00 Tm (Salary package) Tj ET
+0.6 w 56.00 359.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 84.80 367.00 Tm (min_cgpa) Tj ET
+0.6 w 148 383 m 148 359 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 367.00 Tm (DECIMAL\(3,2\)) Tj ET
+0.6 w 276 383 m 276 359 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 367.00 Tm () Tj ET
+0.6 w 406 383 m 406 359 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 367.00 Tm (Eligibility CGPA) Tj ET
+0.6 w 56.00 335.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 84.80 343.00 Tm (deadline) Tj ET
+0.6 w 148 359 m 148 335 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 343.00 Tm (DATE) Tj ET
+0.6 w 276 359 m 276 335 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 343.00 Tm () Tj ET
+0.6 w 406 359 m 406 335 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 343.00 Tm (Last date) Tj ET
+0.6 w 56.00 311.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 89.10 319.00 Tm (status) Tj ET
+0.6 w 148 335 m 148 311 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 319.00 Tm (ENUM\('open','closed'\)) Tj ET
+0.6 w 276 335 m 276 311 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 319.00 Tm () Tj ET
+0.6 w 406 335 m 406 311 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 319.00 Tm (Availability) Tj ET
+endstream
+endobj
+26 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 25 0 R >>
+endobj
+27 0 obj
+<< /Length 7082 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 11) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (6. RELATIONAL DATABASE DESIGN) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 7.5: Applications Table) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 8.6 Tf 1 0 0 1 87.81 705.00 Tm (Column) Tj ET
+0.6 w 148 721 m 148 697 l S
+BT /F2 8.6 Tf 1 0 0 1 190.72 705.00 Tm (Data Type) Tj ET
+0.6 w 276 721 m 276 697 l S
+BT /F2 8.6 Tf 1 0 0 1 303.16 705.00 Tm (Key / Constraint) Tj ET
+0.6 w 406 721 m 406 697 l S
+BT /F2 8.6 Tf 1 0 0 1 456.94 705.00 Tm (Purpose) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 97.70 681.00 Tm (id) Tj ET
+0.6 w 148 697 m 148 673 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 681.00 Tm (INT) Tj ET
+0.6 w 276 697 m 276 673 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 681.00 Tm (PK) Tj ET
+0.6 w 406 697 m 406 673 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 681.00 Tm (Application identifier) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 80.50 657.00 Tm (student_id) Tj ET
+0.6 w 148 673 m 148 649 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 657.00 Tm (INT) Tj ET
+0.6 w 276 673 m 276 649 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 657.00 Tm (FK) Tj ET
+0.6 w 406 673 m 406 649 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 657.00 Tm (Applicant) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 89.10 633.00 Tm (job_id) Tj ET
+0.6 w 148 649 m 148 625 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 633.00 Tm (INT) Tj ET
+0.6 w 276 649 m 276 625 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 633.00 Tm (FK) Tj ET
+0.6 w 406 649 m 406 625 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 633.00 Tm (Applied job) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 89.10 609.00 Tm (status) Tj ET
+0.6 w 148 625 m 148 601 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 609.00 Tm (ENUM\('applied','shortlisted','selected','rejected'\)) Tj ET
+0.6 w 276 625 m 276 601 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 609.00 Tm () Tj ET
+0.6 w 406 625 m 406 601 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 609.00 Tm (Current status) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 80.50 585.00 Tm (applied_at) Tj ET
+0.6 w 148 601 m 148 577 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 585.00 Tm (TIMESTAMP) Tj ET
+0.6 w 276 601 m 276 577 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 585.00 Tm (DEFAULT CURRENT_TIMESTAMP) Tj ET
+0.6 w 406 601 m 406 577 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 585.00 Tm (Submission time) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 80.50 561.00 Tm (updated_at) Tj ET
+0.6 w 148 577 m 148 553 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 561.00 Tm (TIMESTAMP) Tj ET
+0.6 w 276 577 m 276 553 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 561.00 Tm (ON UPDATE) Tj ET
+0.6 w 406 577 m 406 553 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 561.00 Tm (Status update time) Tj ET
+0.6 w 56.00 517.80 485.00 35.20 re S
+BT /F1 8.6 Tf 1 0 0 1 63.30 537.00 Tm (unique_application) Tj ET
+0.6 w 148 553 m 148 517.8 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 537.00 Tm (UNIQUE) Tj ET
+0.6 w 276 553 m 276 517.8 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 537.00 Tm (Prevents duplicate) Tj ET
+BT /F1 8.6 Tf 1 0 0 1 281.00 524.40 Tm (applications) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 505.80 Tm (Table 7.6: Interviews Table) Tj ET
+0.6 w 56.00 467.80 485.00 24.00 re S
+BT /F2 8.6 Tf 1 0 0 1 87.81 475.80 Tm (Column) Tj ET
+0.6 w 148 491.79999999999995 m 148 467.79999999999995 l S
+BT /F2 8.6 Tf 1 0 0 1 190.72 475.80 Tm (Data Type) Tj ET
+0.6 w 276 491.79999999999995 m 276 467.79999999999995 l S
+BT /F2 8.6 Tf 1 0 0 1 303.16 475.80 Tm (Key / Constraint) Tj ET
+0.6 w 406 491.79999999999995 m 406 467.79999999999995 l S
+BT /F2 8.6 Tf 1 0 0 1 456.94 475.80 Tm (Purpose) Tj ET
+0.6 w 56.00 443.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 97.70 451.80 Tm (id) Tj ET
+0.6 w 148 467.79999999999995 m 148 443.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 451.80 Tm (INT) Tj ET
+0.6 w 276 467.79999999999995 m 276 443.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 451.80 Tm (PK) Tj ET
+0.6 w 406 467.79999999999995 m 406 443.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 451.80 Tm (Interview identifier) Tj ET
+0.6 w 56.00 419.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 71.90 427.80 Tm (application_id) Tj ET
+0.6 w 148 443.79999999999995 m 148 419.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 427.80 Tm (INT) Tj ET
+0.6 w 276 443.79999999999995 m 276 419.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 427.80 Tm (FK) Tj ET
+0.6 w 406 443.79999999999995 m 406 419.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 427.80 Tm (Related application) Tj ET
+0.6 w 56.00 395.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 71.90 403.80 Tm (interview_date) Tj ET
+0.6 w 148 419.79999999999995 m 148 395.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 403.80 Tm (DATETIME) Tj ET
+0.6 w 276 419.79999999999995 m 276 395.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 403.80 Tm (NOT NULL) Tj ET
+0.6 w 406 419.79999999999995 m 406 395.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 403.80 Tm (Date and time) Tj ET
+0.6 w 56.00 371.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 93.40 379.80 Tm (mode) Tj ET
+0.6 w 148 395.79999999999995 m 148 371.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 379.80 Tm (ENUM\('online','offline'\)) Tj ET
+0.6 w 276 395.79999999999995 m 276 371.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 379.80 Tm () Tj ET
+0.6 w 406 395.79999999999995 m 406 371.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 379.80 Tm (Mode) Tj ET
+0.6 w 56.00 347.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 91.25 355.80 Tm (venue) Tj ET
+0.6 w 148 371.79999999999995 m 148 347.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 355.80 Tm (VARCHAR\(180\)) Tj ET
+0.6 w 276 371.79999999999995 m 276 347.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 355.80 Tm () Tj ET
+0.6 w 406 371.79999999999995 m 406 347.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 355.80 Tm (Venue or meeting link) Tj ET
+0.6 w 56.00 323.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 78.35 331.80 Tm (interviewer) Tj ET
+0.6 w 148 347.79999999999995 m 148 323.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 331.80 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 347.79999999999995 m 276 323.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 331.80 Tm () Tj ET
+0.6 w 406 347.79999999999995 m 406 323.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 331.80 Tm (Interviewer) Tj ET
+0.6 w 56.00 299.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 89.10 307.80 Tm (result) Tj ET
+0.6 w 148 323.79999999999995 m 148 299.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 307.80 Tm (ENUM\('scheduled','selected','rejected','on_hold'\)) Tj ET
+0.6 w 276 323.79999999999995 m 276 299.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 307.80 Tm () Tj ET
+0.6 w 406 323.79999999999995 m 406 299.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 307.80 Tm (Result) Tj ET
+0.6 w 56.00 275.80 485.00 24.00 re S
+BT /F1 8.6 Tf 1 0 0 1 91.25 283.80 Tm (notes) Tj ET
+0.6 w 148 299.79999999999995 m 148 275.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 153.00 283.80 Tm (TEXT) Tj ET
+0.6 w 276 299.79999999999995 m 276 275.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 281.00 283.80 Tm () Tj ET
+0.6 w 406 299.79999999999995 m 406 275.79999999999995 l S
+BT /F1 8.6 Tf 1 0 0 1 411.00 283.80 Tm (Remarks) Tj ET
+endstream
+endobj
+28 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 27 0 R >>
+endobj
+29 0 obj
+<< /Length 1350 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 12) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (6. RELATIONAL DATABASE DESIGN) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (The relational design separates authentication, student profiles, companies, job) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (openings, applications, and interviews into independent but connected tables.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (This design reduces duplication and supports reliable joins for reports and) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (dashboards.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 655.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 655.00 Tm (Primary keys identify each record uniquely.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 632.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 632.00 Tm (Foreign keys preserve relationships between dependent records.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 609.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 609.00 Tm (Unique constraints prevent duplicate accounts, roll numbers, company names,) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 591.00 Tm (and repeated applications.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 568.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 568.00 Tm (Status fields support controlled workflow tracking for jobs, applications, and) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 550.00 Tm (interviews.) Tj ET
+endstream
+endobj
+30 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 29 0 R >>
+endobj
+31 0 obj
+<< /Length 1114 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 13) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (7. DATABASE NORMALIZATION) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (First Normal Form \(1NF\): All fields contain atomic values, and every table has a) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (primary key. For example, student roll number, department, CGPA, and phone number) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (are stored as separate attributes instead of combined text.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 673.00 Tm (Second Normal Form \(2NF\): Non-key attributes depend on the full key of their) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 655.00 Tm (table. Job details depend on job id, company details depend on company id, and) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 637.00 Tm (application status depends on the application record.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 611.00 Tm (The applications table also resolves the many-to-many relationship between) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 593.00 Tm (students and jobs, preventing repeated groups inside the students or jobs tables.) Tj ET
+endstream
+endobj
+32 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 31 0 R >>
+endobj
+33 0 obj
+<< /Length 1420 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 14) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (7. DATABASE NORMALIZATION) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (Third Normal Form \(3NF\): Transitive dependencies are removed. Company information) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (is stored in companies and referenced from jobs. Student account credentials are) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (stored in users, while academic profile information is stored in students.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 673.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 673.00 Tm (The design avoids storing company names repeatedly in every job record.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 650.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 650.00 Tm (The design avoids storing student login credentials repeatedly in placement) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 632.00 Tm (records.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 609.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 609.00 Tm (Applications store only application-related data and reference students and) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 591.00 Tm (jobs.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 568.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 568.00 Tm (Interviews reference applications, so interview data remains connected to the) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 550.00 Tm (recruitment process without duplicating student and job details.) Tj ET
+endstream
+endobj
+34 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 33 0 R >>
+endobj
+35 0 obj
+<< /Length 5906 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 15) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (8. DATA DICTIONARY) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 9.1: Users Data Dictionary) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 8.5 Tf 1 0 0 1 84.96 705.00 Tm (Attribute) Tj ET
+0.6 w 156 721 m 156 697 l S
+BT /F2 8.5 Tf 1 0 0 1 194.96 705.00 Tm (Data Type) Tj ET
+0.6 w 276 721 m 276 697 l S
+BT /F2 8.5 Tf 1 0 0 1 315.13 705.00 Tm (Constraint) Tj ET
+0.6 w 401 721 m 401 697 l S
+BT /F2 8.5 Tf 1 0 0 1 445.29 705.00 Tm (Description) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 101.75 681.00 Tm (id) Tj ET
+0.6 w 156 697 m 156 673 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 681.00 Tm (INT) Tj ET
+0.6 w 276 697 m 276 673 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 681.00 Tm (PK) Tj ET
+0.6 w 401 697 m 401 673 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 681.00 Tm (User identifier) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 97.50 657.00 Tm (name) Tj ET
+0.6 w 156 673 m 156 649 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 657.00 Tm (VARCHAR\(100\)) Tj ET
+0.6 w 276 673 m 276 649 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 657.00 Tm (NOT NULL) Tj ET
+0.6 w 401 673 m 401 649 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 657.00 Tm (Full name) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 95.38 633.00 Tm (email) Tj ET
+0.6 w 156 649 m 156 625 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 633.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 649 m 276 625 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 633.00 Tm (UNIQUE) Tj ET
+0.6 w 401 649 m 401 625 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 633.00 Tm (Login email) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 89.00 609.00 Tm (password) Tj ET
+0.6 w 156 625 m 156 601 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 609.00 Tm (VARCHAR\(255\)) Tj ET
+0.6 w 276 625 m 276 601 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 609.00 Tm (NOT NULL) Tj ET
+0.6 w 401 625 m 401 601 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 609.00 Tm (Hashed password) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 97.50 585.00 Tm (role) Tj ET
+0.6 w 156 601 m 156 577 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 585.00 Tm (ENUM\('admin','student'\)) Tj ET
+0.6 w 276 601 m 276 577 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 585.00 Tm (NOT NULL) Tj ET
+0.6 w 401 601 m 401 577 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 585.00 Tm (Access role) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 84.75 561.00 Tm (created_at) Tj ET
+0.6 w 156 577 m 156 553 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 561.00 Tm (TIMESTAMP) Tj ET
+0.6 w 276 577 m 276 553 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 561.00 Tm (DEFAULT CURRENT_TIMESTAMP) Tj ET
+0.6 w 401 577 m 401 553 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 561.00 Tm (Creation time) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 541.00 Tm (Table 9.2: Students Data Dictionary) Tj ET
+0.6 w 56.00 503.00 485.00 24.00 re S
+BT /F2 8.5 Tf 1 0 0 1 84.96 511.00 Tm (Attribute) Tj ET
+0.6 w 156 527 m 156 503 l S
+BT /F2 8.5 Tf 1 0 0 1 194.96 511.00 Tm (Data Type) Tj ET
+0.6 w 276 527 m 276 503 l S
+BT /F2 8.5 Tf 1 0 0 1 315.13 511.00 Tm (Constraint) Tj ET
+0.6 w 401 527 m 401 503 l S
+BT /F2 8.5 Tf 1 0 0 1 445.29 511.00 Tm (Description) Tj ET
+0.6 w 56.00 479.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 101.75 487.00 Tm (id) Tj ET
+0.6 w 156 503 m 156 479 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 487.00 Tm (INT) Tj ET
+0.6 w 276 503 m 276 479 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 487.00 Tm (PK) Tj ET
+0.6 w 401 503 m 401 479 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 487.00 Tm (Student identifier) Tj ET
+0.6 w 56.00 455.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 91.13 463.00 Tm (user_id) Tj ET
+0.6 w 156 479 m 156 455 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 463.00 Tm (INT) Tj ET
+0.6 w 276 479 m 276 455 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 463.00 Tm (FK, UNIQUE) Tj ET
+0.6 w 401 479 m 401 455 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 463.00 Tm (Linked user account) Tj ET
+0.6 w 56.00 431.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 91.13 439.00 Tm (roll_no) Tj ET
+0.6 w 156 455 m 156 431 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 439.00 Tm (VARCHAR\(40\)) Tj ET
+0.6 w 276 455 m 276 431 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 439.00 Tm (UNIQUE) Tj ET
+0.6 w 401 455 m 401 431 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 439.00 Tm (Roll number) Tj ET
+0.6 w 56.00 407.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 84.75 415.00 Tm (department) Tj ET
+0.6 w 156 431 m 156 407 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 415.00 Tm (VARCHAR\(80\)) Tj ET
+0.6 w 276 431 m 276 407 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 415.00 Tm (NOT NULL) Tj ET
+0.6 w 401 431 m 401 407 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 415.00 Tm (Department) Tj ET
+0.6 w 56.00 383.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 74.13 391.00 Tm (graduation_year) Tj ET
+0.6 w 156 407 m 156 383 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 391.00 Tm (YEAR) Tj ET
+0.6 w 276 407 m 276 383 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 391.00 Tm (NOT NULL) Tj ET
+0.6 w 401 407 m 401 383 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 391.00 Tm (Graduation year) Tj ET
+0.6 w 56.00 359.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 97.50 367.00 Tm (cgpa) Tj ET
+0.6 w 156 383 m 156 359 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 367.00 Tm (DECIMAL\(3,2\)) Tj ET
+0.6 w 276 383 m 276 359 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 367.00 Tm (CHECK) Tj ET
+0.6 w 401 383 m 401 359 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 367.00 Tm (Academic score) Tj ET
+0.6 w 56.00 335.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 93.25 343.00 Tm (skills) Tj ET
+0.6 w 156 359 m 156 335 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 343.00 Tm (TEXT) Tj ET
+0.6 w 276 359 m 276 335 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 343.00 Tm () Tj ET
+0.6 w 401 359 m 401 335 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 343.00 Tm (Technical skills) Tj ET
+0.6 w 56.00 311.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 95.38 319.00 Tm (phone) Tj ET
+0.6 w 156 335 m 156 311 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 319.00 Tm (VARCHAR\(20\)) Tj ET
+0.6 w 276 335 m 276 311 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 319.00 Tm () Tj ET
+0.6 w 401 335 m 401 311 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 319.00 Tm (Contact number) Tj ET
+endstream
+endobj
+36 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 35 0 R >>
+endobj
+37 0 obj
+<< /Length 5831 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 16) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (8. DATA DICTIONARY) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 9.3: Companies Data Dictionary) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 8.5 Tf 1 0 0 1 84.96 705.00 Tm (Attribute) Tj ET
+0.6 w 156 721 m 156 697 l S
+BT /F2 8.5 Tf 1 0 0 1 194.96 705.00 Tm (Data Type) Tj ET
+0.6 w 276 721 m 276 697 l S
+BT /F2 8.5 Tf 1 0 0 1 315.13 705.00 Tm (Constraint) Tj ET
+0.6 w 401 721 m 401 697 l S
+BT /F2 8.5 Tf 1 0 0 1 445.29 705.00 Tm (Description) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 101.75 681.00 Tm (id) Tj ET
+0.6 w 156 697 m 156 673 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 681.00 Tm (INT) Tj ET
+0.6 w 276 697 m 276 673 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 681.00 Tm (PK) Tj ET
+0.6 w 401 697 m 401 673 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 681.00 Tm (Company identifier) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 97.50 657.00 Tm (name) Tj ET
+0.6 w 156 673 m 156 649 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 657.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 673 m 276 649 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 657.00 Tm (UNIQUE) Tj ET
+0.6 w 401 673 m 401 649 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 657.00 Tm (Company name) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 89.00 633.00 Tm (industry) Tj ET
+0.6 w 156 649 m 156 625 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 633.00 Tm (VARCHAR\(100\)) Tj ET
+0.6 w 276 649 m 276 625 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 633.00 Tm () Tj ET
+0.6 w 401 649 m 401 625 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 633.00 Tm (Business domain) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 91.13 609.00 Tm (website) Tj ET
+0.6 w 156 625 m 156 601 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 609.00 Tm (VARCHAR\(180\)) Tj ET
+0.6 w 276 625 m 276 601 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 609.00 Tm () Tj ET
+0.6 w 401 625 m 401 601 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 609.00 Tm (Website) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 89.00 585.00 Tm (location) Tj ET
+0.6 w 156 601 m 156 577 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 585.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 601 m 276 577 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 585.00 Tm () Tj ET
+0.6 w 401 601 m 401 577 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 585.00 Tm (Location) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 78.38 561.00 Tm (contact_email) Tj ET
+0.6 w 156 577 m 156 553 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 561.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 577 m 276 553 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 561.00 Tm () Tj ET
+0.6 w 401 577 m 401 553 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 561.00 Tm (HR email) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 541.00 Tm (Table 9.4: Jobs Data Dictionary) Tj ET
+0.6 w 56.00 503.00 485.00 24.00 re S
+BT /F2 8.5 Tf 1 0 0 1 84.96 511.00 Tm (Attribute) Tj ET
+0.6 w 156 527 m 156 503 l S
+BT /F2 8.5 Tf 1 0 0 1 194.96 511.00 Tm (Data Type) Tj ET
+0.6 w 276 527 m 276 503 l S
+BT /F2 8.5 Tf 1 0 0 1 315.13 511.00 Tm (Constraint) Tj ET
+0.6 w 401 527 m 401 503 l S
+BT /F2 8.5 Tf 1 0 0 1 445.29 511.00 Tm (Description) Tj ET
+0.6 w 56.00 479.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 101.75 487.00 Tm (id) Tj ET
+0.6 w 156 503 m 156 479 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 487.00 Tm (INT) Tj ET
+0.6 w 276 503 m 276 479 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 487.00 Tm (PK) Tj ET
+0.6 w 401 503 m 401 479 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 487.00 Tm (Job identifier) Tj ET
+0.6 w 56.00 455.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 84.75 463.00 Tm (company_id) Tj ET
+0.6 w 156 479 m 156 455 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 463.00 Tm (INT) Tj ET
+0.6 w 276 479 m 276 455 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 463.00 Tm (FK) Tj ET
+0.6 w 401 479 m 401 455 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 463.00 Tm (Posting company) Tj ET
+0.6 w 56.00 431.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 95.38 439.00 Tm (title) Tj ET
+0.6 w 156 455 m 156 431 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 439.00 Tm (VARCHAR\(140\)) Tj ET
+0.6 w 276 455 m 276 431 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 439.00 Tm (NOT NULL) Tj ET
+0.6 w 401 455 m 401 431 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 439.00 Tm (Job role) Tj ET
+0.6 w 56.00 407.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 82.63 415.00 Tm (description) Tj ET
+0.6 w 156 431 m 156 407 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 415.00 Tm (TEXT) Tj ET
+0.6 w 276 431 m 276 407 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 415.00 Tm () Tj ET
+0.6 w 401 431 m 401 407 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 415.00 Tm (Responsibilities) Tj ET
+0.6 w 56.00 383.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 82.63 391.00 Tm (package_lpa) Tj ET
+0.6 w 156 407 m 156 383 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 391.00 Tm (DECIMAL\(5,2\)) Tj ET
+0.6 w 276 407 m 276 383 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 391.00 Tm () Tj ET
+0.6 w 401 407 m 401 383 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 391.00 Tm (Salary package) Tj ET
+0.6 w 56.00 359.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 89.00 367.00 Tm (min_cgpa) Tj ET
+0.6 w 156 383 m 156 359 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 367.00 Tm (DECIMAL\(3,2\)) Tj ET
+0.6 w 276 383 m 276 359 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 367.00 Tm () Tj ET
+0.6 w 401 383 m 401 359 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 367.00 Tm (Eligibility CGPA) Tj ET
+0.6 w 56.00 335.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 89.00 343.00 Tm (deadline) Tj ET
+0.6 w 156 359 m 156 335 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 343.00 Tm (DATE) Tj ET
+0.6 w 276 359 m 276 335 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 343.00 Tm () Tj ET
+0.6 w 401 359 m 401 335 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 343.00 Tm (Last date) Tj ET
+0.6 w 56.00 311.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 93.25 319.00 Tm (status) Tj ET
+0.6 w 156 335 m 156 311 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 319.00 Tm (ENUM\('open','closed'\)) Tj ET
+0.6 w 276 335 m 276 311 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 319.00 Tm () Tj ET
+0.6 w 401 335 m 401 311 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 319.00 Tm (Availability) Tj ET
+endstream
+endobj
+38 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 37 0 R >>
+endobj
+39 0 obj
+<< /Length 6366 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 17) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (8. DATA DICTIONARY) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 9.5: Applications Data Dictionary) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 8.5 Tf 1 0 0 1 84.96 705.00 Tm (Attribute) Tj ET
+0.6 w 156 721 m 156 697 l S
+BT /F2 8.5 Tf 1 0 0 1 194.96 705.00 Tm (Data Type) Tj ET
+0.6 w 276 721 m 276 697 l S
+BT /F2 8.5 Tf 1 0 0 1 315.13 705.00 Tm (Constraint) Tj ET
+0.6 w 401 721 m 401 697 l S
+BT /F2 8.5 Tf 1 0 0 1 445.29 705.00 Tm (Description) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 101.75 681.00 Tm (id) Tj ET
+0.6 w 156 697 m 156 673 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 681.00 Tm (INT) Tj ET
+0.6 w 276 697 m 276 673 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 681.00 Tm (PK) Tj ET
+0.6 w 401 697 m 401 673 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 681.00 Tm (Application identifier) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 84.75 657.00 Tm (student_id) Tj ET
+0.6 w 156 673 m 156 649 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 657.00 Tm (INT) Tj ET
+0.6 w 276 673 m 276 649 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 657.00 Tm (FK) Tj ET
+0.6 w 401 673 m 401 649 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 657.00 Tm (Applicant) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 93.25 633.00 Tm (job_id) Tj ET
+0.6 w 156 649 m 156 625 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 633.00 Tm (INT) Tj ET
+0.6 w 276 649 m 276 625 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 633.00 Tm (FK) Tj ET
+0.6 w 401 649 m 401 625 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 633.00 Tm (Applied job) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 93.25 609.00 Tm (status) Tj ET
+0.6 w 156 625 m 156 601 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 609.00 Tm (ENUM\('applied','shortlisted','selected','rejected'\)) Tj ET
+0.6 w 276 625 m 276 601 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 609.00 Tm () Tj ET
+0.6 w 401 625 m 401 601 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 609.00 Tm (Current status) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 84.75 585.00 Tm (applied_at) Tj ET
+0.6 w 156 601 m 156 577 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 585.00 Tm (TIMESTAMP) Tj ET
+0.6 w 276 601 m 276 577 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 585.00 Tm (DEFAULT CURRENT_TIMESTAMP) Tj ET
+0.6 w 401 601 m 401 577 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 585.00 Tm (Submission time) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 84.75 561.00 Tm (updated_at) Tj ET
+0.6 w 156 577 m 156 553 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 561.00 Tm (TIMESTAMP) Tj ET
+0.6 w 276 577 m 276 553 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 561.00 Tm (ON UPDATE) Tj ET
+0.6 w 401 577 m 401 553 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 561.00 Tm (Status update time) Tj ET
+0.6 w 56.00 518.00 485.00 35.00 re S
+BT /F1 8.5 Tf 1 0 0 1 67.75 537.00 Tm (unique_application) Tj ET
+0.6 w 156 553 m 156 518 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 537.00 Tm (UNIQUE) Tj ET
+0.6 w 276 553 m 276 518 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 537.00 Tm (Prevents duplicate) Tj ET
+BT /F1 8.5 Tf 1 0 0 1 281.00 524.50 Tm (applications) Tj ET
+0.6 w 401 553 m 401 518 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 537.00 Tm (undefined) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 506.00 Tm (Table 9.6: Interviews Data Dictionary) Tj ET
+0.6 w 56.00 468.00 485.00 24.00 re S
+BT /F2 8.5 Tf 1 0 0 1 84.96 476.00 Tm (Attribute) Tj ET
+0.6 w 156 492 m 156 468 l S
+BT /F2 8.5 Tf 1 0 0 1 194.96 476.00 Tm (Data Type) Tj ET
+0.6 w 276 492 m 276 468 l S
+BT /F2 8.5 Tf 1 0 0 1 315.13 476.00 Tm (Constraint) Tj ET
+0.6 w 401 492 m 401 468 l S
+BT /F2 8.5 Tf 1 0 0 1 445.29 476.00 Tm (Description) Tj ET
+0.6 w 56.00 444.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 101.75 452.00 Tm (id) Tj ET
+0.6 w 156 468 m 156 444 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 452.00 Tm (INT) Tj ET
+0.6 w 276 468 m 276 444 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 452.00 Tm (PK) Tj ET
+0.6 w 401 468 m 401 444 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 452.00 Tm (Interview identifier) Tj ET
+0.6 w 56.00 420.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 76.25 428.00 Tm (application_id) Tj ET
+0.6 w 156 444 m 156 420 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 428.00 Tm (INT) Tj ET
+0.6 w 276 444 m 276 420 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 428.00 Tm (FK) Tj ET
+0.6 w 401 444 m 401 420 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 428.00 Tm (Related application) Tj ET
+0.6 w 56.00 396.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 76.25 404.00 Tm (interview_date) Tj ET
+0.6 w 156 420 m 156 396 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 404.00 Tm (DATETIME) Tj ET
+0.6 w 276 420 m 276 396 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 404.00 Tm (NOT NULL) Tj ET
+0.6 w 401 420 m 401 396 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 404.00 Tm (Date and time) Tj ET
+0.6 w 56.00 372.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 97.50 380.00 Tm (mode) Tj ET
+0.6 w 156 396 m 156 372 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 380.00 Tm (ENUM\('online','offline'\)) Tj ET
+0.6 w 276 396 m 276 372 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 380.00 Tm () Tj ET
+0.6 w 401 396 m 401 372 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 380.00 Tm (Mode) Tj ET
+0.6 w 56.00 348.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 95.38 356.00 Tm (venue) Tj ET
+0.6 w 156 372 m 156 348 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 356.00 Tm (VARCHAR\(180\)) Tj ET
+0.6 w 276 372 m 276 348 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 356.00 Tm () Tj ET
+0.6 w 401 372 m 401 348 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 356.00 Tm (Venue or meeting link) Tj ET
+0.6 w 56.00 324.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 82.63 332.00 Tm (interviewer) Tj ET
+0.6 w 156 348 m 156 324 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 332.00 Tm (VARCHAR\(120\)) Tj ET
+0.6 w 276 348 m 276 324 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 332.00 Tm () Tj ET
+0.6 w 401 348 m 401 324 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 332.00 Tm (Interviewer) Tj ET
+0.6 w 56.00 300.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 93.25 308.00 Tm (result) Tj ET
+0.6 w 156 324 m 156 300 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 308.00 Tm (ENUM\('scheduled','selected','rejected','on_hold'\)) Tj ET
+0.6 w 276 324 m 276 300 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 308.00 Tm () Tj ET
+0.6 w 401 324 m 401 300 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 308.00 Tm (Result) Tj ET
+0.6 w 56.00 276.00 485.00 24.00 re S
+BT /F1 8.5 Tf 1 0 0 1 95.38 284.00 Tm (notes) Tj ET
+0.6 w 156 300 m 156 276 l S
+BT /F1 8.5 Tf 1 0 0 1 161.00 284.00 Tm (TEXT) Tj ET
+0.6 w 276 300 m 276 276 l S
+BT /F1 8.5 Tf 1 0 0 1 281.00 284.00 Tm () Tj ET
+0.6 w 401 300 m 401 276 l S
+BT /F1 8.5 Tf 1 0 0 1 406.00 284.00 Tm (Remarks) Tj ET
+endstream
+endobj
+40 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 39 0 R >>
+endobj
+41 0 obj
+<< /Length 494 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 18) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (9. GRAPHICAL USER INTERFACE) Tj ET
+0.9 w 98.00 585.00 403.28 150.00 re S
+BT /F2 12 Tf 1 0 0 1 221.74 565.00 Tm (Figure 10.1: Login Page) Tj ET
+0.9 w 98.00 385.00 403.28 150.00 re S
+BT /F2 12 Tf 1 0 0 1 205.24 365.00 Tm (Figure 10.2: Admin Dashboard) Tj ET
+0.9 w 98.00 185.00 403.28 150.00 re S
+BT /F2 12 Tf 1 0 0 1 211.84 165.00 Tm (Figure 10.3: Students Page) Tj ET
+endstream
+endobj
+42 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 41 0 R >>
+endobj
+43 0 obj
+<< /Length 497 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 19) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (9. GRAPHICAL USER INTERFACE) Tj ET
+0.9 w 98.00 585.00 403.28 150.00 re S
+BT /F2 12 Tf 1 0 0 1 225.04 565.00 Tm (Figure 10.4: Jobs Page) Tj ET
+0.9 w 98.00 385.00 403.28 150.00 re S
+BT /F2 12 Tf 1 0 0 1 198.64 365.00 Tm (Figure 10.5: Applications Page) Tj ET
+0.9 w 98.00 185.00 403.28 150.00 re S
+BT /F2 12 Tf 1 0 0 1 205.24 165.00 Tm (Figure 10.6: Interviews Page) Tj ET
+endstream
+endobj
+44 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 43 0 R >>
+endobj
+45 0 obj
+<< /Length 2155 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 20) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (10. SOURCE CODE) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 11.1: Frontend File Structure) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 9.1 Tf 1 0 0 1 135.99 705.00 Tm (File) Tj ET
+0.6 w 236 721 m 236 697 l S
+BT /F2 9.1 Tf 1 0 0 1 360.97 705.00 Tm (Description) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 102.78 681.00 Tm (frontend/index.html) Tj ET
+0.6 w 236 697 m 236 673 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 681.00 Tm (Login page for admin and student access) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 80.03 657.00 Tm (frontend/admin-dashboard.html) Tj ET
+0.6 w 236 673 m 236 649 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 657.00 Tm (Admin dashboard and analytics interface) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 75.48 633.00 Tm (frontend/student-dashboard.html) Tj ET
+0.6 w 236 649 m 236 625 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 633.00 Tm (Student profile, jobs, and applications view) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 95.95 609.00 Tm (frontend/students.html) Tj ET
+0.6 w 236 625 m 236 601 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 609.00 Tm (Student management page) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 105.05 585.00 Tm (frontend/jobs.html) Tj ET
+0.6 w 236 601 m 236 577 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 585.00 Tm (Job management page) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 86.85 561.00 Tm (frontend/applications.html) Tj ET
+0.6 w 236 577 m 236 553 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 561.00 Tm (Application status management page) Tj ET
+0.6 w 56.00 529.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 91.40 537.00 Tm (frontend/interviews.html) Tj ET
+0.6 w 236 553 m 236 529 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 537.00 Tm (Interview scheduling and result page) Tj ET
+0.6 w 56.00 505.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 105.05 513.00 Tm (frontend/assets/js) Tj ET
+0.6 w 236 529 m 236 505 l S
+BT /F1 9.1 Tf 1 0 0 1 241.00 513.00 Tm (API calls, validation, rendering, and charts) Tj ET
+endstream
+endobj
+46 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 45 0 R >>
+endobj
+47 0 obj
+<< /Length 1950 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 21) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (10. SOURCE CODE) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Table 11.2: Backend File Structure) Tj ET
+0.6 w 56.00 697.00 485.00 24.00 re S
+BT /F2 9.1 Tf 1 0 0 1 118.47 705.00 Tm (File / Folder) Tj ET
+0.6 w 246 721 m 246 697 l S
+BT /F2 9.1 Tf 1 0 0 1 365.97 705.00 Tm (Description) Tj ET
+0.6 w 56.00 673.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 112.33 681.00 Tm (backend/server.js) Tj ET
+0.6 w 246 697 m 246 673 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 681.00 Tm (Configures middleware, static files, routes, and server startup) Tj ET
+0.6 w 56.00 649.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 96.40 657.00 Tm (backend/src/config/db.js) Tj ET
+0.6 w 246 673 m 246 649 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 657.00 Tm (Creates MySQL connection pool) Tj ET
+0.6 w 56.00 625.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 98.68 633.00 Tm (backend/src/controllers) Tj ET
+0.6 w 246 649 m 246 625 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 633.00 Tm (Contains module business logic) Tj ET
+0.6 w 56.00 601.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 110.05 609.00 Tm (backend/src/routes) Tj ET
+0.6 w 246 625 m 246 601 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 609.00 Tm (Defines REST API endpoints) Tj ET
+0.6 w 56.00 577.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 60.00 585.00 Tm (backend/src/middleware/authMiddleware.js) Tj ET
+0.6 w 246 601 m 246 577 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 585.00 Tm (Verifies JWT and role permissions) Tj ET
+0.6 w 56.00 553.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 73.65 561.00 Tm (backend/src/middleware/validate.js) Tj ET
+0.6 w 246 577 m 246 553 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 561.00 Tm (Runs request validation) Tj ET
+0.6 w 56.00 529.00 485.00 24.00 re S
+BT /F1 9.1 Tf 1 0 0 1 123.70 537.00 Tm (database.sql) Tj ET
+0.6 w 246 553 m 246 529 l S
+BT /F1 9.1 Tf 1 0 0 1 251.00 537.00 Tm (Creates database schema and seed records) Tj ET
+endstream
+endobj
+48 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 47 0 R >>
+endobj
+49 0 obj
+<< /Length 1135 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 22) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (10. SOURCE CODE) Tj ET
+BT /F2 12 Tf 1 0 0 1 56.00 735.00 Tm (Key Code Snippets) Tj ET
+0.6 w 56.00 527.00 487.28 178.00 re S
+BT /F1 10 Tf 1 0 0 1 68.00 693.00 Tm (app.use\(express.json\(\)\);) Tj ET
+BT /F1 10 Tf 1 0 0 1 68.00 669.00 Tm (app.use\('/api/auth', authRoutes\);) Tj ET
+BT /F1 10 Tf 1 0 0 1 68.00 645.00 Tm (app.use\('/api/students', studentRoutes\);) Tj ET
+BT /F1 10 Tf 1 0 0 1 68.00 621.00 Tm (const token = jwt.sign\({ id: user.id, role: user.role }, JWT_SECRET\);) Tj ET
+BT /F1 10 Tf 1 0 0 1 68.00 597.00 Tm (const [rows] = await pool.query\('SELECT * FROM users WHERE email = ? AND role = ?', [email, role]\);) Tj ET
+BT /F1 10 Tf 1 0 0 1 68.00 573.00 Tm (headers.Authorization = `Bearer ${token}`;) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 497.00 Tm (These snippets show server middleware setup, route mounting, JWT token) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 479.00 Tm (generation, secure parameterized SQL queries, and frontend token-based API) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 461.00 Tm (access.) Tj ET
+endstream
+endobj
+50 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 49 0 R >>
+endobj
+51 0 obj
+<< /Length 586 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 23) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (11. TEST AND RESULTS) Tj ET
+0.9 w 98.00 525.00 403.28 210.00 re S
+BT /F2 12 Tf 1 0 0 1 208.54 505.00 Tm (Figure 12.1: Analytics Page) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 475.00 Tm (The analytics page verifies that dashboard cards and charts load database values) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 457.00 Tm (such as total students, selected students, placement percentage, highest package,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 439.00 Tm (and average package.) Tj ET
+endstream
+endobj
+52 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 51 0 R >>
+endobj
+53 0 obj
+<< /Length 520 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 24) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (11. TEST AND RESULTS) Tj ET
+0.9 w 98.00 525.00 403.28 210.00 re S
+BT /F2 12 Tf 1 0 0 1 182.14 505.00 Tm (Figure 12.2: Students Module Output) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 475.00 Tm (The students module verifies that records can be viewed, added, edited, and) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 457.00 Tm (deleted by an administrator while maintaining account and profile consistency.) Tj ET
+endstream
+endobj
+54 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 53 0 R >>
+endobj
+55 0 obj
+<< /Length 493 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 25) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (11. TEST AND RESULTS) Tj ET
+0.9 w 98.00 525.00 403.28 210.00 re S
+BT /F2 12 Tf 1 0 0 1 178.84 505.00 Tm (Figure 12.3: Interview Module Output) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 475.00 Tm (The interview module verifies scheduling, interview mode, venue, interviewer,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 457.00 Tm (result, and notes for each selected application.) Tj ET
+endstream
+endobj
+56 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 55 0 R >>
+endobj
+57 0 obj
+<< /Length 496 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 26) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (11. TEST AND RESULTS) Tj ET
+0.9 w 98.00 525.00 403.28 210.00 re S
+BT /F2 12 Tf 1 0 0 1 195.34 505.00 Tm (Figure 12.4: Jobs Module Output) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 475.00 Tm (The jobs module verifies job creation, company linkage, eligibility CGPA, package) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 457.00 Tm (details, deadline, status, and listing for students.) Tj ET
+endstream
+endobj
+58 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 57 0 R >>
+endobj
+59 0 obj
+<< /Length 1107 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 27) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (12. CONCLUSION) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (The Placement Management System successfully demonstrates the application of) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (relational database concepts to a real academic workflow. The system uses) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (normalized tables, primary keys, foreign keys, unique constraints, transactions,) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (joins, aggregate queries, secure authentication, and role-based access control.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 655.00 Tm (The project improves placement management by centralizing records, reducing) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 637.00 Tm (duplicate data, enabling secure access, and providing useful analytics for) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 619.00 Tm (placement administrators. It also provides students with a structured way to view) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 601.00 Tm (jobs, apply for opportunities, and track interviews.) Tj ET
+endstream
+endobj
+60 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 59 0 R >>
+endobj
+61 0 obj
+<< /Length 1708 >>
+stream
+0.8 w 30.00 38.00 535.28 765.89 re S
+BT /F1 10 Tf 1 0 0 1 280.14 22.00 Tm (Page 28) Tj ET
+BT /F2 16 Tf 1 0 0 1 56.00 772.00 Tm (13. FUTURE ENHANCEMENT AND BIBLIOGRAPHY) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 735.00 Tm (Future enhancements may include company login, resume upload storage, email and) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 717.00 Tm (SMS notifications, interview round tracking, offer letter generation, PDF or) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 699.00 Tm (Excel export, advanced eligibility filtering, and predictive analytics for) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 681.00 Tm (placement trends.) Tj ET
+BT /F2 13 Tf 1 0 0 1 56.00 655.00 Tm (Bibliography) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 631.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 631.00 Tm (MySQL Documentation, Relational Database Concepts and SQL Syntax.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 608.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 608.00 Tm (Node.js Documentation, Server-Side JavaScript Runtime.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 585.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 585.00 Tm (Express.js Documentation, Routing and Middleware.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 562.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 562.00 Tm (JSON Web Token Documentation, Token-Based Authentication.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 539.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 539.00 Tm (bcrypt Documentation, Password Hashing.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 516.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 516.00 Tm (Chart.js Documentation, Browser-Based Data Visualization.) Tj ET
+BT /F1 12 Tf 1 0 0 1 56.00 493.00 Tm (-) Tj ET
+BT /F1 12 Tf 1 0 0 1 74.00 493.00 Tm (Project files: backend/server.js, backend/src, frontend, and database.sql.) Tj ET
+endstream
+endobj
+62 0 obj
+<< /Type /Page /Parent 63 0 R /MediaBox [0 0 595.28 841.89] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 61 0 R >>
+endobj
+63 0 obj
+<< /Type /Pages /Kids [4 0 R 6 0 R 8 0 R 10 0 R 12 0 R 14 0 R 16 0 R 18 0 R 20 0 R 22 0 R 24 0 R 26 0 R 28 0 R 30 0 R 32 0 R 34 0 R 36 0 R 38 0 R 40 0 R 42 0 R 44 0 R 46 0 R 48 0 R 50 0 R 52 0 R 54 0 R 56 0 R 58 0 R 60 0 R 62 0 R] /Count 30 >>
+endobj
+64 0 obj
+<< /Type /Catalog /Pages 63 0 R >>
+endobj
+xref
+0 65
+0000000000 65535 f 
+0000000009 00000 n 
+0000000081 00000 n 
+0000000152 00000 n 
+0000001821 00000 n 
+0000001964 00000 n 
+0000006470 00000 n 
+0000006613 00000 n 
+0000009459 00000 n 
+0000009602 00000 n 
+0000011474 00000 n 
+0000011618 00000 n 
+0000013369 00000 n 
+0000013514 00000 n 
+0000015366 00000 n 
+0000015511 00000 n 
+0000020786 00000 n 
+0000020931 00000 n 
+0000023317 00000 n 
+0000023462 00000 n 
+0000025068 00000 n 
+0000025213 00000 n 
+0000028051 00000 n 
+0000028196 00000 n 
+0000034141 00000 n 
+0000034286 00000 n 
+0000040157 00000 n 
+0000040302 00000 n 
+0000047437 00000 n 
+0000047582 00000 n 
+0000048985 00000 n 
+0000049130 00000 n 
+0000050297 00000 n 
+0000050442 00000 n 
+0000051915 00000 n 
+0000052060 00000 n 
+0000058019 00000 n 
+0000058164 00000 n 
+0000064048 00000 n 
+0000064193 00000 n 
+0000070612 00000 n 
+0000070757 00000 n 
+0000071303 00000 n 
+0000071448 00000 n 
+0000071997 00000 n 
+0000072142 00000 n 
+0000074350 00000 n 
+0000074495 00000 n 
+0000076498 00000 n 
+0000076643 00000 n 
+0000077831 00000 n 
+0000077976 00000 n 
+0000078614 00000 n 
+0000078759 00000 n 
+0000079331 00000 n 
+0000079476 00000 n 
+0000080021 00000 n 
+0000080166 00000 n 
+0000080714 00000 n 
+0000080859 00000 n 
+0000082019 00000 n 
+0000082164 00000 n 
+0000083925 00000 n 
+0000084070 00000 n 
+0000084330 00000 n 
+trailer
+<< /Size 65 /Root 64 0 R >>
+startxref
+84381
+%%EOF

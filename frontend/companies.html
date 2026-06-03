@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Companies</title>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/forms.css">
+  <link rel="stylesheet" href="assets/css/tables.css">
+</head>
+<body>
+  <nav class="navbar"><a class="brand" href="admin-dashboard.html">PlacementPro</a><div class="navlinks"><a href="admin-dashboard.html">Analytics</a><a href="students.html">Students</a><a href="jobs.html">Jobs</a><button class="btn ghost" onclick="logout()">Logout</button></div></nav>
+  <main class="container">
+    <header class="page-header"><div><p class="eyebrow">Admin</p><h1>Company Management</h1></div></header>
+    <section class="split-layout">
+      <form id="companyForm" class="form-card">
+        <input type="hidden" id="companyId">
+        <label>Name<input id="name" required></label>
+        <label>Industry<input id="industry" required></label>
+        <label>Website<input id="website"></label>
+        <label>Location<input id="location"></label>
+        <label>Contact Email<input id="contact_email" type="email"></label>
+        <button class="btn primary" type="submit">Save Company</button>
+      </form>
+      <div class="table-wrap"><table><thead><tr><th>Name</th><th>Industry</th><th>Location</th><th>Email</th><th>Actions</th></tr></thead><tbody id="companiesTable"></tbody></table></div>
+    </section>
+  </main>
+  <div id="loader" class="loader hidden"></div><div id="toast" class="toast"></div>
+  <script src="assets/js/ui.js"></script><script src="assets/js/api.js"></script><script src="assets/js/auth.js"></script><script src="assets/js/companies.js"></script>
+</body>
+</html>
